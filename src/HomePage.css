@@ -1,0 +1,37 @@
+.homepage {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #f8f9fa, #e9ecef);
+  }
+  
+  .title {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #007bff;
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .heap-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .heap-button:hover {
+    background-color: #0056b3;
+  }
+  

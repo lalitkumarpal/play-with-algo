@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import HomePage from './HomePage';
+import MaxHeapVisualizer from './MaxHeapVisualizer';  // Assuming you have a MaxHeapVisualizer component
+import MinHeapVisualizer from './MinHeapVisualizer';  // Assuming you have a MinHeapVisualizer component
 
-function App() {
+const App = () => {
+  const [selectedHeap, setSelectedHeap] = useState(null);
+
+  const handleSelectHeap = (heapType) => {
+    setSelectedHeap(heapType);
+  };
+
+  const renderHeapVisualizer = () => {
+    if (selectedHeap === 'max') {
+      return <MaxHeapVisualizer />;
+    } else if (selectedHeap === 'min') {
+      return <MinHeapVisualizer />;
+    }
+    return null;
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {selectedHeap ? (
+        renderHeapVisualizer()
+      ) : (
+        <HomePage onSelectHeap={handleSelectHeap} />
+      )}
     </div>
   );
-}
+};
 
 export default App;

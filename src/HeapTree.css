@@ -1,0 +1,54 @@
+.heap-tree {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.node-container {
+  position: absolute;
+  text-align: center;
+}
+
+.node {
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.edges {
+  position: absolute;
+  top: -20px; /* Adjust as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.edge-left, .edge-right {
+  display: flex;
+  align-items: center;
+  width: 50%;
+  position: relative;
+}
+
+.line {
+  width: 2px;
+  height: 20px; /* Adjust as needed */
+  background-color: #000;
+}
+
+.children {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
