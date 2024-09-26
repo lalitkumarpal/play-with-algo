@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MinHeap from './MinHeap'; // Import the MinHeap class
 import HeapTree from './HeapTree'; // Import the HeapTree component
+import './MinHeapVisualizer.css'; // Import CSS file for styling
 
 const MinHeapVisualizer = () => {
   const [heap, setHeap] = useState([]);

@@ -2,7 +2,7 @@
   "name": "max-heap-visualizer",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lalitpa.github.io/play_with_algo",
+  "homepage": "https://lalitpa.github.io/play-with-algo",
   "dependencies": {
     "@react-spring/web": "^9.7.4",
     "@testing-library/jest-dom": "^5.17.0",

@@ -1,28 +1,36 @@
 import React, { useState } from 'react';
 import HomePage from './HomePage';
-import MaxHeapVisualizer from './MaxHeapVisualizer';  // Assuming you have a MaxHeapVisualizer component
-import MinHeapVisualizer from './MinHeapVisualizer';  // Assuming you have a MinHeapVisualizer component
+import MaxHeapVisualizer from './MaxHeapVisualizer';  
+import MinHeapVisualizer from './MinHeapVisualizer';  
+import StackVisualizer from './StackVisualizer'; // Assuming you have a StackVisualizer component
+import QueueVisualizer from './QueueVisualizer'; // Add the QueueVisualizer import
 
 const App = () => {
   const [selectedHeap, setSelectedHeap] = useState(null);
 
   const handleSelectHeap = (heapType) => {
-    setSelectedHeap(heapType);
+    setSelectedHeap(heapType); // Set the selectedHeap state based on button click
   };
 
-  const renderHeapVisualizer = () => {
-    if (selectedHeap === 'max') {
-      return <MaxHeapVisualizer />;
-    } else if (selectedHeap === 'min') {
-      return <MinHeapVisualizer />;
+  const renderVisualizer = () => {
+    switch (selectedHeap) {
+      case 'max':
+        return <MaxHeapVisualizer />;
+      case 'min':
+        return <MinHeapVisualizer />;
+      case 'stack':
+        return <StackVisualizer />;
+      case 'queue':
+        return <QueueVisualizer />;
+      default:
+        return null; // Return null if no visualizer is selected
     }
-    return null;
   };
 
   return (
     <div className="App">
       {selectedHeap ? (
-        renderHeapVisualizer()
+        renderVisualizer() // Render the selected visualizer
       ) : (
         <HomePage onSelectHeap={handleSelectHeap} />
       )}

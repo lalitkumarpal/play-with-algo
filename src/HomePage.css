@@ -1,37 +1,40 @@
-.homepage {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, #f8f9fa, #e9ecef);
-  }
-  
-  .title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: #007bff;
-  }
-  
-  .button-container {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .heap-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .heap-button:hover {
-    background-color: #0056b3;
-  }
-  
+/* HomePage.css */
+
+.home-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Align items to the top */
+  height: 100vh; /* Full height of the viewport */
+  padding-top: 20px; /* Optional padding for top spacing */
+  background-color: #f9f9f9; /* Light background color */
+}
+
+.title {
+  font-size: 4rem; /* Increased font size for the title */
+  margin-bottom: 40px; /* Spacing below the title */
+  color: #333; /* Darker text color */
+  text-align: center; /* Center the title text */
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 15px; /* Space between buttons */
+}
+
+button {
+  padding: 15px 30px; /* Increased padding for larger buttons */
+  font-size: 18px; /* Larger font size for buttons */
+  color: white; /* Text color for buttons */
+  background-color: #007bff; /* Button color */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+  width: 200px; /* Fixed width for buttons */
+}
+
+button:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}

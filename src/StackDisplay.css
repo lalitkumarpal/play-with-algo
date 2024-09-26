@@ -1,0 +1,43 @@
+.stack-display {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Consistent margin at the top */
+  }
+  
+  .stack-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 10px; /* Space above the stack */
+    padding: 10px; /* Inner padding */
+    border: 2px solid #28a745; /* Green border for the stack */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f8f9fa; /* Light background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  }
+  
+  .stack-item {
+    background-color: #28a745; /* Green background for items */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around items */
+    margin: 5px 0; /* Space between items */
+    border-radius: 5px; /* Rounded corners for items */
+    width: 100%; /* Full width */
+    text-align: center; /* Center text */
+    transition: background-color 0.3s; /* Smooth color change */
+    position: relative; /* Position for the arrow */
+  }
+  
+  .arrow {
+    position: absolute; /* Absolute positioning for the arrow */
+    right: 100%; /* Position to the left of the item */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust to center vertically */
+    font-size: 20px; /* Size of the arrow */
+    color: blue; /* Blue color for the arrow */
+    margin-right: 5px; /* Space between the arrow and the item */
+  }
+  
+  .stack-item:hover {
+    background-color: #218838; /* Darker green on hover */
+  }
+  

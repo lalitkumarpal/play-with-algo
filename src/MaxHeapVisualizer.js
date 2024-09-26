@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import MaxHeap from './MaxHeap'; // Import the MaxHeap class
 import HeapTree from './HeapTree'; // Import the HeapTree component
+import './MaxHeapVisualizer.css'; // Import CSS file for styling
 
 const MaxHeapVisualizer = () => {
   const [heap, setHeap] = useState([]);

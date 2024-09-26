@@ -1,0 +1,46 @@
+.queue-display {
+    text-align: center; /* Center the text */
+    margin-top: 20px; /* Consistent margin at the top */
+  }
+  
+  .queue-container {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 10px; /* Space above the queue */
+    padding: 10px; /* Inner padding */
+    border: 2px solid #28a745; /* Blue border for the queue */
+    border-radius: 5px; /* Rounded corners */
+    background-color: #f8f9fa; /* Light background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow */
+  }
+  
+  .queue-item {
+    background-color: #28a745; /* Blue background for items */
+    color: white; /* White text color */
+    padding: 10px 20px; /* Padding around items */
+    margin: 5px 0; /* Space between items */
+    border-radius: 5px; /* Rounded corners for items */
+    width: 100%; /* Full width */
+    text-align: left; /* Align text to the left */
+    position: relative; /* Position for the arrow */
+  }
+  
+  .arrow {
+    position: absolute; /* Absolute positioning for the arrow */
+    left: -25px; /* Adjust as needed to position it well */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust to center vertically */
+    font-size: 20px; /* Size of the arrow */
+    color: blue; /* Blue color for the arrow */
+    z-index: 1; /* Ensure it is above other content */
+  }
+  
+  .item-content {
+    margin-left: 10px; /* Space between arrow and item content */
+  }
+  
+  .queue-item:hover {
+    background-color: #28a745; /* Darker blue on hover */
+  }
+  
